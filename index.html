@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0f1115" />
+    <meta name="color-scheme" content="dark" />
+    <!--
+      CSP (MEDIUM-01, adapter-static sem servidor): meta permissiva para nao quebrar
+      a hidratacao SvelteKit (inline scripts/estilos). Prefira headers no host estatico.
+      Diretiva estrita recomendada no host:
+      default-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'
+      + X-Content-Type-Options: nosniff + Referrer-Policy: same-origin.
+      Limitacao: meta com 'unsafe-inline' nao bloqueia XSS via inline; header com
+      nonce/hash seria ideal, mas exige SSR/host com injecao por resposta.
+    -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self' https://storage.bunnycdn.com https://uk.storage.bunnycdn.com https://ny.storage.bunnycdn.com https://la.storage.bunnycdn.com https://sg.storage.bunnycdn.com https://se.storage.bunnycdn.com https://br.storage.bunnycdn.com https://jh.storage.bunnycdn.com https://syd.storage.bunnycdn.com"
+    />
+    <title>App Produtividade</title>
+    <link href="/_app/immutable/entry/start.DQqWmJif.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/DBB00T7w.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/mmvNcSn-.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/9ZzGF3Dy.js" rel="modulepreload">
+		<link href="/_app/immutable/entry/app.BNjOX3Ij.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/BdvoHjJU.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/B-RQMxFx.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/DqDj2rbL.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/l_5TzJ5I.js" rel="modulepreload">
+		<link href="/_app/immutable/nodes/0.DwJgaejx.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/7BhcZ0Lx.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/PQcVU6RD.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/5cuYEoyc.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/KaZYLMWE.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/Cn0J2Fgi.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/D1PSATy7.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/B-n7htFX.js" rel="modulepreload">
+		
+		<link href="/_app/immutable/assets/0.CO1_7gFY.css" rel="stylesheet">
+  		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	</head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">
+			<script>
+				{
+					__sveltekit_1qwomj7 = {
+						base: ""
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.DQqWmJif.js"),
+						import("/_app/immutable/entry/app.BNjOX3Ij.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>
